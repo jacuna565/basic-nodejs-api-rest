@@ -1,0 +1,19 @@
+{
+  "name": "zoetic-api",
+  "version": "1.0.0",
+  "description": "zoetic api - fullstacktest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "RESTful",
+    "json",
+    "node",
+    "mongodb",
+    "express"
+  ],
+  "author": "Jan Acuna",
+  "license": "ISC"
+}
