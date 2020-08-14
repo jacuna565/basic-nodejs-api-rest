@@ -9,8 +9,8 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerOptions = {
     swaggerDefinition: {
         info: {
-            title: "Vitals API",
-            description: "Vitals API Information",
+            title: "Zoetic API",
+            description: "Zoetic API Information",
             contac: {
                 name: "Jan Acuna",
             },

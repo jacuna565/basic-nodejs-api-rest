@@ -35,19 +35,12 @@ in order to up your server. This will run the server at
 
 ### Working Endpoints (_for this case_)
 
-BASE_URL/measurements
+API Documentation: BASE_URL/api-docs/
+*http://localhost:8080/api-docs/*
 
-> GET all
+or
 
-> POST
-
-BASE_URL/measurements/:id
-
-> GET one
-
-> PATCH / PUT
-
-> DELETE
+*https://basic-nodejs-api-rest.herokuapp.com/api-docs/*
 
 ### Deployment
 
