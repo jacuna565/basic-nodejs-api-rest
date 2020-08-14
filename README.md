@@ -35,7 +35,8 @@ in order to up your server. This will run the server at
 
 ### Working Endpoints (_for this case_)
 
-API Documentation: BASE_URL/api-docs/
+API Documentation:
+
 *http://localhost:8080/api-docs/*
 
 or
