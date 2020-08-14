@@ -1,7 +1,27 @@
-let express = require('express');
-let bodyParser = require('body-parser');
-let mongoose = require('mongoose');
-let app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const app = express();
+
+const swaggerJsDoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
+
+const swaggerOptions = {
+    swaggerDefinition: {
+        info: {
+            title: "Vitals API",
+            description: "Vitals API Information",
+            contac: {
+                name: "Jan Acuna",
+            },
+            servers:["http://localhost:8080","https://basic-nodejs-api-rest.herokuapp.com/"]
+        }
+    },
+    apis:["api-routes.js"],
+};
+
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 let apiRoutes = require("./api-routes");
 
@@ -20,9 +40,9 @@ var db = mongoose.connection;
 (!db) ? console.log("Error connecting db") : console.log("Db connected successfully")
 
 
-app.get('/', (req, res) => res.send('NodeJs + Express + mongo server :)'));
+// app.get('/', (req, res) => res.send('NodeJs + Express + mongo server :)'));
 
-app.use('/api', apiRoutes);
+app.use('/', apiRoutes);
 
 // Launch app to listen to specified port
 

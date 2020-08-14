@@ -8,6 +8,11 @@ You must have installed
 
 - nodejs
 - mongodb
+- nodemon (or install this dependency locally by running: 
+```
+  npm install --save-dev nodemon
+```
+)
 
 ### Installing
 
@@ -30,13 +35,13 @@ in order to up your server. This will run the server at
 
 ### Working Endpoints (_for this case_)
 
-BASE_URL/api/measurements
+BASE_URL/measurements
 
 > GET all
 
 > POST
 
-BASE_URL/api/measurements/:id
+BASE_URL/measurements/:id
 
 > GET one
 
@@ -44,6 +49,8 @@ BASE_URL/api/measurements/:id
 
 > DELETE
 
-### Deployed in heroku
+### Deployment
+
+Using [Heroku](https://www.heroku.com/) and [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
 click [here](https://basic-nodejs-api-rest.herokuapp.com/) to test the **ApiREST** and receive some random data
