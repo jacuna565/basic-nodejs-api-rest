@@ -1,7 +1,7 @@
 {
-  "name": "zoetic-api",
+  "name": "nodejs-api-rest",
   "version": "1.0.0",
-  "description": "zoetic api - fullstacktest",
+  "description": "nodeJS server using express and mongodb",
   "main": "index.js",
   "scripts": {
     "develop": "nodemon ./index.js",
